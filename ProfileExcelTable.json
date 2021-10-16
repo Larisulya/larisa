@@ -1,0 +1,62 @@
+ {
+    "op": "rdf-extension/save-rdf-schema",
+    "schema": {
+      "prefixes": [
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "rail",
+          "uri": "http://www.semanticweb.org/larisk0/ontologies/2021/7/rail#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        }
+      ],
+      "baseUri": "http://www.semanticweb.org/larisk0/ontologies/2021/7/rail#",
+      "rootNodes": [
+        {
+          "nodeType": "resource",
+          "value": "track_1",
+          "links": [
+            {
+              "uri": "http://www.semanticweb.org/larisk0/ontologies/2021/7/rail#has_gradient",
+              "curie": "rail:has_gradient",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "максимальный уклон",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "isRowNumberCell": false
+              }
+            },
+            {
+              "uri": "http://www.semanticweb.org/larisk0/ontologies/2021/7/rail#has_difference",
+              "curie": "rail:has_difference",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "columnName": "максимальная разница",
+                "expression": "value",
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "isRowNumberCell": false
+              }
+            }
+          ],
+          "rdfTypes": [
+            {
+              "uri": "http://www.semanticweb.org/larisk0/ontologies/2021/7/rail#track",
+              "curie": "rail:track"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Save RDF schema skeleton"
+  }
+]

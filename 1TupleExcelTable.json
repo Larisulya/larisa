@@ -1,0 +1,38 @@
+[
+  {
+    "op": "core/row-star",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "starred": true,
+    "description": "Star rows"
+  },
+  {
+    "op": "core/row-removal",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Starred Rows",
+          "expression": "row.starred",
+          "columnName": "",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "description": "Remove rows"
+  },
